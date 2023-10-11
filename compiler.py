@@ -109,8 +109,7 @@ with open('modules/main.asm', 'w+') as o:
     o.seek(0)
     o.write(OUTPUT)
 
-process = subprocess.Popen(['sh', 'compile.sh'], cwd='modules', stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-process.wait() # Wait for process to complete.
+os.system('fasm.x64 modules/main.asm modules/main')
 
 
 quit()
