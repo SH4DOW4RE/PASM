@@ -109,7 +109,7 @@ with open('modules/main.asm', 'w+') as o:
     o.seek(0)
     o.write(OUTPUT)
 
-os.system('fasm.x64 modules/main.asm modules/main')
+os.system('fasm.x64 modules/main.asm modules/main && chmod 777 modules/main')
 
 
 quit()
