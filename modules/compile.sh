@@ -1,0 +1,1 @@
+fasm.x64 main.asm && chmod 777 main
